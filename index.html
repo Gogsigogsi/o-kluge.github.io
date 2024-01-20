@@ -27,6 +27,12 @@
             font-style: italic;
         }
     </style>
+    <script>
+        // JavaScript für die Weiterleitung
+        if (window.innerWidth <= 768) { // Hier kannst du die Breite anpassen, ab der die Weiterleitung erfolgt
+            window.location.href = 'mobil/index.html'; // Pfad zu deiner mobilen Website
+        }
+    </script>
 </head>
 
 <body>
@@ -48,7 +54,6 @@
         </nav>
     </div>
 
-    
     <section id="startseite" class="content">
         <div class="button-container">
             <a href="termin.html#termin" class="orange-button">Termin</a>
@@ -62,31 +67,27 @@
         </div>
     </section>
 
-   
-
-   
-
     <footer>
-    
         <marquee>Rufen Sie gern an unter Tel: <span class="phone-number">040 / 38625700</span> und hinterlassen Sie eine Nachricht auf dem Anrufbeantworter. Ich melde mich umgehend zurück.</marquee>
-    
         <p>&copy; 2024 Meine Moderne Website. Alle Rechte vorbehalten.</p>
     </footer>
 
     <!-- Start of Tawk.to Script -->
     <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/6547b5a9f2439e1631ebf1ea/1heg1r87q';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6547b5a9f2439e1631ebf1ea/1heg1r87q';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
     <!-- End of Tawk.to Script -->
-
 </body>
 
 </html>
+
