@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Aclonica', sans-serif;
+    background-color: #f9f9f9;
+    color: #fff;
+    background-image: url('Image/Hintergrund.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    position: relative;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner .banner-text {
+    position: absolute;
+    top: 30%;
+    left: 90px;
+    transform: translateY(-50%);
+}
+
+.banner .banner-text h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner .banner-text .subtext {
+    font-size: 10px;
+}
+
+.banner .banner-text p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.banner nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+    position: absolute;
+    top: 70px;
+    right: 110px;
+}
+
+.banner nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.banner nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.banner nav ul li a:hover {
+    color: orange;
+}
+
+.welcome-text::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: orange;
+    margin-bottom: 10px;
+}
+.marquee {
+    font-family: 'Aclonica', sans-serif;
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.8); /* Leicht durchsichtiger Hintergrund */
+    padding: 10px 0;
+    position: absolute;
+    height: 40px;
+    top: 90%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.welcome-text::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: orange;
+    margin-top: 10px;
+}
+
+.welcome-text {
+    width: 400px;
+    margin-left: 110px;
+    margin-top: 140px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+.additional-text {
+    width: 400px;
+    margin-left: 110px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.orange-button {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.orange-button:hover {
+    background-color: #ff8c00;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 60px;
+    margin-right: 1480px; /* Verschiebung nach links */
+}
+

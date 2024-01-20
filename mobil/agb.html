@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ihre Website</title>
+    <style>
+        /* Fügen Sie hier die spezifischen CSS-Stile für Ihre Änderungen hinzu */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Aclonica', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .phone-number {
+            color: orange;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .hamburger-menu {
+            cursor: pointer;
+            display: none;
+        }
+
+        .hamburger-menu .bar {
+            height: 5px;
+            width: 35px;
+            background-color: white;
+            margin: 6px 0;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            background-color: #333;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            display: none;
+        }
+
+        .nav-links a {
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+/* Weitere vorhandene CSS-Stile für .banner und andere Elemente */
+
+        .description-box {
+            position: absolute;
+            width: 42%;
+            bottom: -390%;
+            left: 50%;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #text-container {
+    margin: 20px;
+    max-height: 700px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white; /* Schriftfarbe auf weiß ändern */
+        }
+
+        iframe {
+            position: absolute;
+            top: 50px;
+            left: 5px;
+            width: 800px; /* Verbreiterte Breite */
+            height: 850px; /* Höhe */
+            border: none;
+            background-color: transparent;
+        }
+
+        /* Weitere CSS-Stile für den marquee und die Telefonnummer */
+
+        @media screen and (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links {
+                position: relative;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Computer Service<br><span class="subtext">O.Kluge PC-Dienst</span></h1>
+            </div>
+        
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+       
+            <nav class="nav-links">
+                <a href="index.html">Startseite</a>
+                <a href="dienstleistungen.html">Dienstleistungen</a>
+                <a href="preise.html">Preise</a>
+                <a href="termin.html">Termin</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="agb.html">AGB</a>
+            </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section> 
+             <div id="text-container">
+        <p>
+            AGB<br>
+            Allgemeine Geschäftsbedingungen<br><br>
+            §1 Geltung der Bedingungen<br>
+            1. Die Lieferungen, Leistungen und Angebote erfolgen ausschließlich aufgrund dieser Geschäftsbedingungen. Spätestens mit der Entgegennahme der Ware aus der ersten Bestellung oder Leistung gelten diese Bedingungen als angenommen. Diese gelten auch für alle künftigen Geschäftsbeziehungen, selbst wenn sie nicht nochmals ausdrücklich vereinbart werden. Gegenbestätigungen von Kunden unter Hinweis auf seine AGB wird hiermit widersprochen; diese gelten auch dann nicht, wenn "O.KLUGE PC-DIENST" nicht nochmals ausdrücklich widerspricht.<br>
+            2. Abweichungen von diesen Geschäftsbedingungen sind nur wirksam, wenn "O.KLUGE PC-DIENST" diese schriftlich bestätigt. Nebenabreden oder Zusicherungen durch Beauftragte, die über den Inhalt des jeweiligen Vertrages einschließlich diese Geschäftsbedingungen hinausgehen, sind ebenfalls schriftlich zu vereinbaren.<br><br>
+            §2 Vertragsabschluss<br>
+            1. Alle Angebote sind - auch bezüglich der Preisangaben - freibleibend und unverbindlich.<br>
+            2. Der Käufer ist vier Wochen an seinen Auftrag gebunden. Aufträge bedürfen zur Rechtswirksamkeit der Bestätigung des Verkäufers.<br>
+            3. Nebenabreden, Änderungen und Ergänzungen sind nur gültig, wenn diese schriftlich oder elektronisch (per E-Mail) bestätigt sind.<br><br>
+            §3 Preise, Preisänderungen<br>
+            1. Die Preise schließen die gesetzliche Mehrwertsteuer ein.2. Soweit zwischen Vertragsabschluss und vereinbartem und/oder tatsächlichem Lieferdatum mehr als sechs Monate liegen, gelten die zur Zeit der Lieferung oder Bereitstellung gültigen Preise des Verkäufers; übersteigen die letztgenannten Preise die zunächst vereinbarten um mehr als zehn Prozent, so ist der Käufer berechtigt, vom Vertrag zurückzutreten.<br>
+	<br>§4 Lieferzeiten<br>
+            Bei Lieferverzögerungen, die ausschließlich vom Verkäufer zu vertreten sind, beträgt die vom Käufer zu setzende Nachfrist zwei Wochen, die mit Eingang der Nachfristsetzung beim Verkäufer beginnt.<br>
+        <br>§5 Versand und Gefahrenübergang<br>
+            1. Erfüllungsort ist Hamburg.<br>
+            2. Die Gefahr geht auf den Käufer über, sobald die Sendung an die den Transport ausführende Person übergeben worden ist oder zwecks Versendung die Geschäftsräume des Verkäufers verlassen hat. Wird der Versand auf Wunsch des Käufers verzögert, geht die Gefahr mit der Meldung der Versandbereitschaft auf ihn über.3. Der Verkäufer ist zu Teillieferungen berechtigt.<br>
+        <br>§6 Gewährleistung<br>
+            1. Ist der Liefergegenstand schadhaft oder fehlen ihm zugesicherte Eigenschaften oder wird er innerhalb der Gewährleistungsfrist durch Fabrikations- oder Materialmängel schadhaft, liefert der Verkäufer nach seiner Wahl, unter Ausschluss sonstiger Gewährleistungsansprüche des Käufers, Ersatz oder bessert nach. Ein mehrfaches Nachbessern ist zulässig.<br> 
+	    2. Die Gewährleistungsfrist beträgt 24 Monate bei Neuware, bzw. 12 Monate bei Gebrauchtware und beginnt mit dem Datum des Erhaltes der gelieferten Ware.<br>
+	    3. Offensichtliche Mängel müssen dem Verkäufer unverzüglich, schriftlich oder elektronisch - per E-Mail mitgeteilt werden.Die mangelhaften Liefergegenstände sind in dem Zustand, in dem sie sich im Zeitpunkt der Feststellung des Mangels befinden, zur Besichtigung durch den Verkäufer bereitzuhalten. Auf Verlangen des Verkäufers hat der Käufer den Liefergegenstand mit einer genauen Fehlerbeschreibung und einer Rechnungskopie an den Verkäufer zurückzusenden. Ein Verstoß gegen die bevorstehenden Verpflichtungen schließen jedwede Gewährleistungsansprüche gegenüber dem Verkäufer aus.<br>
+	    4. Schlägt die Nachbesserung oder die Ersatzlieferung nach angemessener Frist fehl, kann der Käufer nach seiner Wahl Herabsetzung des Kaufpreises oder Rückgängigmachung des Vertrages verlangen.<br>
+	    5. Die Verpackung ist Bestandteil der Lieferung und muss bei Gewährleistungsansprüchen zusammen mit der reklamierten Ware dem Verkäufer übergeben werden. Ohne die Verpackung erlischt die Gewährleistungsfrist und Garantie. Die Verpackung ist deshalb zwingend erforderlich, weil der Verkäufer sonst selbst die beanstandete Ware bei seinem Lieferanten nicht reklamieren kann.<br>
+	<br>§7 Haftungsbegrenzung1. Schadensersatzansprüche aus Vertragsverletzung, aus Verschulden bei Vertragsabschluss und aus unerlaubter Handlung sind ausgeschlossen, soweit der Schaden nicht vorsätzlich oder grob fahrlässig verursacht wurde.<br>
+	    2. Der Schadensanspruch bezieht sich ausschließlich auf den Liefergegenstand, Mängelfolgeschäden sind von der Haftung ausgeschlossen.<br>
+	    3. Schadensersatzansprüche und Gewährleistungsansprüche sind nicht auf Dritte übertragbar.<br>
+	    4. Für Software und Daten wird keine Gewährleistung eingegangen. Vielmehr gilt hier ein Haftungsausschluß, da Daten auch durch Hardware- oder Bedienungsfehler des Kunden/Auftraggebers zerstört werden können. Der Käufer/Auftraggeber ist für die regelmäßige Sicherung seines Datenbestandes selbst verantwortlich.<br>
+	<br>§8 Eigentumsvorbehalt1. Bis zur Erfüllung aller Forderungen, die dem Verkäufer aus jedem Rechtsgrund gegen den Käufer zum Zeitpunkt der Lieferung zustehen, behält sich der Verkäufer das Eigentum an den gelieferten Waren vor (Vorbehaltsware). Der Käufer darf über die Vorbehaltsware nicht verfügen.<br>
+	    2. Bei Zugriffen Dritter - insbesondere Gerichtsvollzieher - auf die Vorbehaltsware wird der Käufer auf das Eigentum des Verkäufers hinweisen und diesen unverzüglich benachrichtigen.<br>
+	    3. Bei vertragswidrigem Verhalten des Käufers - insbesondere bei Zahlungsverzug - ist der Verkäufer berechtigt, die Vorbehaltsware auf seine Kosten zurückzunehmen. Weder in der Zurücknahme noch in der Pfändung der Vorbehaltsware durch den Verkäufer liegt - soweit nicht das Verbraucherkreditgesetz Anwendung findet - der Rücktritt vom Vertrag.<br>
+	<br>§9 Zahlung1. Zahlungen mit befreiender Wirkung können nur unmittelbar an den Verkäufer oder auf ein von diesem angegebenes Bankkonto erfolgen.<br>
+	    2. Grundsätzlich werden keine Teilzahlungen akzeptiert. Abweichende Zahlungsarten bedürfen ausdrücklich der Schriftform.<br>
+	    3. Rechnungen des Verkäufers sind zahlbar ab Rechnungsdatum. Abweichende Bedingungen bedürfen der Schriftform.<br>
+	<br>§10 Geheimhaltung, Datenschutz, Datenverarbeitung
+	<br>1.Der Vertragspartner wird hiermit gemäß §33 Abs. 1 des Bundesdatenschutzgesetzes davon unterrichtet, dass "O.KLUGE PC-DIENST" in dem durch die gesetzlichen Bestimmungen vorgegebenen Rahmen, Daten erhebt, verarbeitet und nutzt, die für die Begründung und Änderung der Kundenverträge erforderlich sind (Bestandsdaten). Dazu gehören z.B. Name, Anschrift, Telefonnumer und E-Mail.<br>
+	    2. Soweit sich "O.KLUGE PC-DIENST" Dritter zur Erbringung der angebotenen Dienste bedient, ist "O.KLUGE PC-DIENST" berechtigt, die Kundendaten offen zu legen, wenn dies zur Erbringung der Leistung erforderlich ist.<br>
+	    3. Kundenspezifische Daten, die der "O.KLUGE PC-DIENST" oder einem Mitarbeiter bekannt werden, werden vertraulich behandelt und nicht an Dritte weitergeben.§11 Anwendbares Recht, Gerichtsstand1. Für die gesamten Rechtsbeziehungen zwischen Verkäufer und Käufer gilt deutsches Recht
+        </p>
+    </div>
+        </section>
+    </main>
+
+    <footer>
+        <marquee>Rufen Sie gern an unter Tel: <span class="phone-number">040 / 38625700</span> und hinterlassen Sie eine Nachricht auf dem Anrufbeantworter. Ich melde mich umgehend zurück.</marquee>
+        <p>&copy; 2024 Ihre Website. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6547b5a9f2439e1631ebf1ea/1heg1r87q';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
+    
+</body>
+</html>
+
