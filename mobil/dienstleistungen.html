@@ -33,6 +33,16 @@
             margin: 6px 0;
         }
 
+iframe {
+            position: absolute;
+            top: 70px;
+            left: 5px;
+            width: 98vw;
+            height: 70vh;
+            border: none;
+            background-color: transparent;
+        }
+
         .nav-links {
             display: flex;
             flex-direction: column;
@@ -50,6 +60,20 @@
             text-decoration: none;
             color: white;
             display: block;
+        }
+
+.services-container {
+            color: white;
+ }
+
+#text-container {
+    margin: 20px;
+    max-height: 700px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white; /* Schriftfarbe auf weiß ändern */
         }
 
         @media screen and (max-width: 768px) {
@@ -103,7 +127,8 @@
                 <h2>Dienstleistungen<br></h2>
             </div>
         
-            <div class="services-container">
+             <div id="text-container">
+        <p>
         <h3></h3>
         
         <ul>
